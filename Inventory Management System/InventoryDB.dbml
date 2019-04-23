@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Inventory" Class="InventoryDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Inventory.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="Inventory_Management_System.Properties.Settings" SettingsPropertyName="InventoryConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AdminTable" Member="AdminTables">
+    <Type Name="AdminTable">
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatagoryTable" Member="CatagoryTables">
+    <Type Name="CatagoryTable">
+      <Column Name="Catagory_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Catagory_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductTable" Member="ProductTables">
+    <Type Name="ProductTable">
+      <Column Name="Product_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Product_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Product_Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Catagory_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ProductTable_OrderTable" Member="OrderTables" ThisKey="Product_ID" OtherKey="Product_ID" Type="OrderTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CustomerTable" Member="CustomerTables">
+    <Type Name="CustomerTable">
+      <Column Name="Customer_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="CustomerTable_OrderTable" Member="OrderTables" ThisKey="Customer_ID" OtherKey="Customer_ID" Type="OrderTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderTable" Member="OrderTables">
+    <Type Name="OrderTable">
+      <Column Name="Order_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Customer_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Catagory" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Product_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Order_Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Order_date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Bill" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="CustomerTable_OrderTable" Member="CustomerTable" ThisKey="Customer_ID" OtherKey="Customer_ID" Type="CustomerTable" IsForeignKey="true" />
+      <Association Name="ProductTable_OrderTable" Member="ProductTable" ThisKey="Product_ID" OtherKey="Product_ID" Type="ProductTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

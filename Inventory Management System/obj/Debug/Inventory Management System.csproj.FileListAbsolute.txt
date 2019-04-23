@@ -1,0 +1,20 @@
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Catagory.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Customer.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Form1.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Home.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Order.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Product.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory_Management_System.Properties.Resources.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.csproj.GenerateResource.Cache
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory.mdf
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory_log.ldf
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.exe.config
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.exe
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.pdb
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.exe
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.pdb
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.exe.manifest
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\bin\Debug\Inventory Management System.application
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.exe.manifest
+C:\Users\USER\Documents\Visual Studio 2015\Projects\Inventory Management System\Inventory Management System\obj\Debug\Inventory Management System.application
